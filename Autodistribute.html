@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Auto Frequency Distribution</title>
+    <script src="Autodistribute.js"></script>
+    <style>
+    .buttons {
+      background-color:#d3d3d3;
+      border:2px solid black;
+      width:80px;
+      height:50px;
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>
+        Automatic Frequency Distribution Table Maker
+      </h1>
+      <hr width="70%" size="10%" color="black">
+      <h2>
+        Input numbers :
+      </h2>
+
+      <textarea id="start" cols="40" rows="5"></textarea>
+
+      <h2>
+        Input separator :
+      </h2>
+      <h3>
+        (ex. '1,2,3,4,5' separator is ',')
+      </h3>
+      <input type="text" id="separate">
+
+      <input type="button" class="buttons" value="Distribute" onclick = "distribute()">
+
+      <hr width="70%" size="2%" color="black">
+      <span>
+        <h2>
+          Sorted :
+        </h2>
+
+        <textarea id="sorted" cols="40" rows="5">
+        </textarea>
+      </span>
+
+      <span>
+        <h2>
+          Range : <input type="text" id="range">
+        </h2>
+      </span>
+
+      <span>
+        <h2>
+          Class : <input type="text" id="class">
+        </h2>
+      </span>
+
+      <span>
+        <h2>
+          Length : <input type="text" id="length">
+        </h2>
+      </span>
+
+    <table border="1" align="center" width="15%">
+      <tbody>
+        <tr>
+          <td width="50%">
+            <center>
+              Number Range
+            </center>
+          </td>
+          <td width="50%">
+            <center>
+              Frequency
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </center>
+  </body>
+</html>
